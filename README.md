@@ -1,24 +1,7 @@
-# Deteksi Keberadaan Tanda Tangan (SIGNATURE PRESENT / ABSENT)
+# Deteksi Tanda Tangan (SIGNATURE PRESENT / ABSENT)
 
 **Nama:** Muhammad Yani
 **NIM:** F1G124069
-
-## Isi folder
-
-| File | Keterangan |
-|---|---|
-| `deteksi_tanda_tangan.ipynb` | Notebook berisi seluruh kode beserta output (sudah dijalankan) |
-| `citra/ijazah_1..8.jpeg` | 8 citra scan ijazah yang digunakan |
-| `hasil/` | Gambar hasil (crop, threshold, morfologi, contoh hasil sistem, grafik) |
-| `README.md` | Penjelasan, hasil, dan jawaban analisis |
-
-**Cara menjalankan:** `pip install opencv-python numpy matplotlib pandas jupyter`, lalu buka notebook dari folder ini dan *Run All*.
-
-## Catatan data
-
-* Dokumen berupa ijazah. Tanda tangan "kepala sekolah" pada tugas ini dipetakan ke tanda tangan **Rektor** (pimpinan institusi) sebagai ROI utama. Tanda tangan **Dekan** dan **pemilik ijazah** dipakai sebagai ROI tambahan.
-* Kedelapan citra adalah scan dokumen yang sama dengan warna/kecerahan berbeda dan tersimpan miring 90°, sehingga diputar dulu (`cv2.rotate`).
-* **Semua 8 citra berisi tanda tangan**, sehingga sampel *tanpa* tanda tangan dibuat dari: (a) kertas kosong (3 area), (b) teks cetak (2 area, sebagai *hard negative*), dan (c) ROI Rektor yang ditimpa kertas kosong (simulasi tanda tangan dihapus). Jadi hasil pengujian di bawah adalah pada sampel buatan dari dokumen yang sama, bukan pada dokumen berbeda.
 
 ## Pipeline
 
