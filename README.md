@@ -1,7 +1,7 @@
-# Deteksi Tanda Tangan (SIGNATURE PRESENT / ABSENT)
-
 **Nama:** Muhammad Yani
 **NIM:** F1G124069
+
+# Deteksi Tanda Tangan (SIGNATURE DETECTION)
 
 ## Pipeline
 
